@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Arcade Vault</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Retro Arcade Vault">
+          <span class="brand-mark">◼</span>
+          <h1>Retro Arcade Vault</h1>
+        </div>
+        <button id="fullscreenBtn" class="ghost-btn" type="button">Fullscreen</button>
+      </header>
+
+      <main class="content">
+        <aside class="sidebar">
+          <h2>Game Select</h2>
+          <div id="gameGrid" class="game-grid" aria-live="polite"></div>
+        </aside>
+
+        <section class="play-area">
+          <div class="game-header">
+            <div>
+              <p class="eyebrow">Arcade Challenge</p>
+              <h2 id="gameTitle">Choose a game</h2>
+            </div>
+            <p id="gameDescription" class="game-description"></p>
+          </div>
+
+          <div id="gameView" class="game-view" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
