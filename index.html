@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Retro Arcade Vault</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand" aria-label="Retro Arcade Vault">
-          <span class="brand-mark">◼</span>
-          <h1>Retro Arcade Vault</h1>
-        </div>
-        <button id="fullscreenBtn" class="ghost-btn" type="button">Fullscreen</button>
-      </header>
-
-      <main class="content">
-        <aside class="sidebar">
-          <h2>Game Select</h2>
-          <div id="gameGrid" class="game-grid" aria-live="polite"></div>
-        </aside>
-
-        <section class="play-area">
-          <div class="game-header">
-            <div>
-              <p class="eyebrow">Arcade Challenge</p>
-              <h2 id="gameTitle">Choose a game</h2>
-            </div>
-            <p id="gameDescription" class="game-description"></p>
-          </div>
-
-          <div id="gameView" class="game-view" aria-live="polite"></div>
-        </section>
-      </main>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070a18" />
+  <title>NEON//ARCADE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Neon Arcade home"><span class="brand-mark">◆</span><span><b>NEON</b><i>//ARCADE</i></span></a>
+      <div class="top-actions"><span class="live"><span></span> LIVE</span><button id="soundBtn" class="icon-btn" type="button" aria-pressed="true">🔊 SOUND</button><button id="fullscreenBtn" class="icon-btn" type="button">⛶ FULLSCREEN</button></div>
+    </header>
+    <section class="hero"><div><p class="eyebrow">INSERT COIN • PLAY FREE</p><h1>LEVEL UP YOUR<br><em>MEMORIES.</em></h1><p class="hero-copy">Six classic-inspired challenges. Zero downloads. Maximum nostalgia.</p></div><div class="hero-badge"><strong>198X</strong><span>EST.<br>ARCADE</span></div></section>
+    <main class="content">
+      <aside class="sidebar"><div class="section-heading"><h2>GAME SELECT</h2><span id="gameCount">06</span></div><div id="gameGrid" class="game-grid"></div><div class="tip"><b>PLAYER TIP</b><span>Use arrow keys or WASD. On mobile, use the on-screen controls.</span></div></aside>
+      <section class="play-area"><div class="game-header"><div><p class="eyebrow">NOW PLAYING</p><h2 id="gameTitle">Choose a game</h2></div><p id="gameDescription" class="game-description"></p></div><div id="gameView" class="game-view"></div></section>
+    </main>
+    <footer><span>NEON//ARCADE</span><span>BUILT FOR THE HIGH SCORE</span><span>© 198X—2026</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
 </html>
